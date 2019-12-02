@@ -48,6 +48,20 @@ navBar[2].textContent = siteContent['nav']['nav-item-3'];
 navBar[3].textContent = siteContent['nav']['nav-item-4'];
 navBar[4].textContent = siteContent['nav']['nav-item-5'];
 navBar[5].textContent = siteContent['nav']['nav-item-6'];
+
+navBar.forEach(element =>{
+  element.style.color = 'green';
+});
+
+let nav = document.querySelector('nav');
+let appendLink = document.createElement('a');
+let prependLink = document.createElement('a');
+appendLink.textContent = 'Appended-Link';
+appendLink.style.color = 'green';
+prependLink.textContent = 'Prepended-Link';
+prependLink.style.color = 'green';
+nav.append(appendLink);
+nav.prepend(prependLink);
 //end nav
 //cta
 let headerTitle = document.querySelector('h1');
